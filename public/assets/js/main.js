@@ -32,7 +32,13 @@
     mobileNavToggleBtn.classList.toggle('bi-list');
     mobileNavToggleBtn.classList.toggle('bi-x');
   }
-  mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
+  if (mobileNavToggleBtn) {
+    mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
+} else {
+    console.error('.mobile-nav-toggle not found!');
+}
+
+
 
   /**
    * Hide mobile nav on same-page/hash links
