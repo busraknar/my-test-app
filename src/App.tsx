@@ -4,22 +4,20 @@ import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
 import Team from './components/Team';
-import Main from './components/Main';
 import Footer from './components/Footer';
+import AboutPage from './components/AboutPage';
+import IndexPage from './components/IndexPage';
 
 const App: React.FC = () => {
   return (
     <Router>
-      <Header />
-      <Main/>
-      <Footer />
+     <Home/>
       <Routes>
-        <Route path="/" element={<Header />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/" element={<IndexPage />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/team" element={<Team />} />
-        <Route path="/main" element={<Main />} />
-
       </Routes>
+      <Footer/>
     </Router>
   );
 };
