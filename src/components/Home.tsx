@@ -1,10 +1,12 @@
 import React from 'react';
+import Header from './Header';
+
 
 const Home: React.FC = () => {
   return (
     <div>
-      <h1>Ana Sayfa</h1>
-      <p>Hoş geldiniz! Burası anasayfa.</p>
+      <Header/>
+  
     </div>
   );
 };
