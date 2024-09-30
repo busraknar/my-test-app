@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 const Header: React.FC = () => {
     return (
         <header id="header" className="header d-flex align-items-center fixed-top">
@@ -9,17 +10,15 @@ const Header: React.FC = () => {
                 <a href="index.html" className="logo d-flex align-items-center">
                     {/* Eğer bir resim logosu kullanmak isterseniz, aşağıdaki satırı kullanabilirsiniz */}
                     {/* <img src="assets/img/logo.png" alt="logo" /> */}
-                    <h1 className="sitename">Söz Test</h1>
+                    <h1 className="sitename" style={{ color: 'white' }}>Söz Test</h1>
                 </a>
 
                 <nav id="navmenu" className="navmenu">
                     <ul>
                         <li><Link to="/" className="active">Anasayfa</Link></li>
                         <li><Link to="/about">Hakkımızda</Link></li>
-                        <li><Link to="/services">Hizmetler</Link></li>
-                        <li><Link to="/portfolio">Portfolio</Link></li>
+                        <li><Link to="/test">Sınav Okuma</Link></li>
                         <li><Link to="/team">Hazırlayanlar</Link></li>
-                        <li><Link to="/blog">Blog</Link></li>
                         <li className="dropdown">
                             <a href="#"><span>Sonuçlar</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
                             <ul>
@@ -35,13 +34,15 @@ const Header: React.FC = () => {
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="contact.html">İletişim</a></li>
+                        <li><Link to="/contact">İletişim</Link></li>
                     </ul>
-                    <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                  
                 </nav>
 
             </div>
+           
         </header>
+        
     );
 };
 
