@@ -7,6 +7,8 @@ import Team from './components/Team';
 import Footer from './components/Footer';
 import AboutPage from './components/AboutPage';
 import IndexPage from './components/IndexPage';
+import ReadingTest from './components/ReadingTest';
+import Contact from './components/Contact';
 
 const App: React.FC = () => {
   return (
@@ -16,6 +18,9 @@ const App: React.FC = () => {
         <Route path="/" element={<IndexPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/test" element={<ReadingTest/>} />
+        <Route path="/contact" element={<Contact/>} />
+
       </Routes>
       <Footer/>
     </Router>
