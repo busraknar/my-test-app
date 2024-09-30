@@ -1,0 +1,44 @@
+
+/* about.css */
+
+/* Genel stil */
+.section {
+    display: flex;
+    justify-content: center; /* Yatayda ortalama */
+    align-items: center; /* Dikeyde ortalama */
+    min-height: 100vh; /* Ekranın tamamını kaplama */
+  }
+  
+  /* İçerik düzeni */
+  .container-about {
+    display: flex;
+    flex-direction: row; /* İçerik yan yana */
+    align-items: center; /* Dikeyde ortalama */
+    gap: 20px; /* Elemanlar arasında boşluk */
+  }
+  
+  .row {
+    width: 100%; /* Tüm genişliği kaplama */
+  }
+  
+  .col-lg-4, .col-lg-6 {
+    display: flex;
+    flex-direction: column; /* Dikey düzen */
+    align-items: center; /* Yatayda ortalama */
+    text-align: center; /* Metin ortalama */
+  }
+  
+  .img-fluid {
+    max-width: 100%; /* Resmin maksimum genişliği */
+    height: auto; /* Orantılı yükseklik */
+  }
+  
+  /* Ek stil kuralları */
+  .light-background {
+    background-color: #f9f9f9; /* Arka plan rengi */
+  }
+  
+  .pulsating-play-btn {
+    /* İlgili stil kurallarınızı buraya ekleyebilirsiniz */
+  }
+  
