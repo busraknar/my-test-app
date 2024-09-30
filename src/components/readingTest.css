@@ -1,0 +1,21 @@
+/* test.css */
+.container2 {
+    margin-top: 80px;
+    display: flex;
+    background-color: #f4f8fb;
+    flex-direction: column;
+    align-items: center; /* Yatayda ortalama */
+    justify-content: center; /* Dikeyde ortalama */
+    height: 100vh; /* Ekranın tamamını kaplama */
+    border-radius: 30px;
+  }
+  
+  .button {
+    margin-top: 10px; /* Buton ile yükleme alanı arasında boşluk */
+  }
+  
+  .result {
+    margin-top: 20px; /* Sonuç alanı ile buton arasında boşluk */
+    text-align: center; /* Sonuç metnini sola yasla */
+  }
+  
