@@ -30,8 +30,8 @@ const Footer: React.FC = () => {
               <span className="sitename">İstanbul Ticaret Üniversitesi</span>
             </a>
             <div className="footer-contact pt-3">
-              <p>A108 Adam Street</p>
-              <p>İstanbul, NY 535022</p>
+              <p>Sütlüce Kampüs </p>
+              <p>İstanbul, Beyoğlu 535022</p>
               <p className="mt-3"><strong>Phone:</strong> +1 5589 55488 55</p>
               <p><strong>Email:</strong> info@example.com</p>
             </div>
@@ -40,9 +40,9 @@ const Footer: React.FC = () => {
           <div className="col-lg-2 col-md-3 footer-links">
             <h4>En Çok Tıklananlar</h4>
             <ul>
-              <li><i className="bi bi-chevron-right"></i> <a href="#">Anasayfa</a></li>
-              <li><i className="bi bi-chevron-right"></i> <a href="#">Hakkımızda</a></li>
-              <li><i className="bi bi-chevron-right"></i> <a href="#">Sonuçlar</a></li>
+              <li><i className="bi bi-chevron-right"></i> <a href="/">Anasayfa</a></li>
+              <li><i className="bi bi-chevron-right"></i> <a href="/about">Hakkımızda</a></li>
+              <li><i className="bi bi-chevron-right"></i> <a href="">Sonuçlar</a></li>
             </ul>
           </div>
 
