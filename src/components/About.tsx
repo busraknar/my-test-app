@@ -7,8 +7,8 @@ const About: React.FC = () => {
       <div className="container-about">
         <div className="row gy-8">
           <div className="col-lg-4 position-relative align-self-start">
-            <img src="assets/img/about.jpg" className="img-fluid" alt="About Us" />
-            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" className="glightbox pulsating-play-btn"></a>
+            <img src="assets/img/about.png" className="img-fluid" alt="About Us" />
+            <a href="https://www.youtube.com/watch?v=EkkCdTrXM5Q" className="glightbox pulsating-play-btn"   target="_blank" ></a>
           </div>
           <div className="col-lg-6 content">
             <h3>Özgün Test!</h3>
