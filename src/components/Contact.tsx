@@ -56,7 +56,7 @@ const Contact: React.FC = () => {
                 <div className="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
                   <i className="bi bi-geo-alt"></i>
                   <h3>Adres</h3>
-                  <p>İstanbul Ticaret Üniversite, Sütlüce </p>
+                  <p>İstanbul Ticaret Üniversitesi, Sütlüce </p>
                 </div>
               </div>
 
