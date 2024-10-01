@@ -7,7 +7,6 @@ import AboutPage from './components/AboutPage';
 import IndexPage from './components/IndexPage';
 import ReadingTest from './components/ReadingTest';
 import Contact from './components/Contact';
-import UniversityPage from './components/UniversityPage';  // Her sınıf için sonuçları gösterecek bileşendi ama
 import UniversityResults from './components/UniversityResults';
 
 
