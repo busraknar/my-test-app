@@ -19,3 +19,15 @@
     text-align: center; /* Sonuç metnini sola yasla */
   }
   
+  .result-message {
+    background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam siyah arka plan */
+    color: white; /* Yazı rengi beyaz */
+    padding: 10px; /* İçerik ile kenar arasındaki boşluk */
+    border-radius: 5px; /* Köşeleri yuvarlak yapmak için */
+    position: fixed; /* Ekranın üst kısmında sabit kalması için */
+    top: 20px; /* Üstten 20px boşluk */
+    left: 50%; /* Ekranın ortasında hizalanması için */
+    transform: translateX(-50%); /* Ortalamak için */
+    z-index: 1000; /* Üstte görünmesi için */
+  }
+  
