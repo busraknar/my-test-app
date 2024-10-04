@@ -7,6 +7,7 @@
     justify-content: center; /* Yatayda ortalama */
     align-items: center; /* Dikeyde ortalama */
     min-height: 100vh; /* Ekranın tamamını kaplama */
+    
   }
   
   /* İçerik düzeni */
