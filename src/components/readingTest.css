@@ -16,17 +16,17 @@
   
   .result {
     margin-top: 20px; /* Sonuç alanı ile buton arasında boşluk */
-    text-align: center; /* Sonuç metnini sola yasla */
+    text-align: center; 
   }
   
   .result-message {
     background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam siyah arka plan */
-    color: white; /* Yazı rengi beyaz */
-    padding: 10px; /* İçerik ile kenar arasındaki boşluk */
-    border-radius: 5px; /* Köşeleri yuvarlak yapmak için */
+    color: white; 
+    padding: 20px; 
+    border-radius: 5px; 
     position: fixed; /* Ekranın üst kısmında sabit kalması için */
-    top: 20px; /* Üstten 20px boşluk */
-    left: 50%; /* Ekranın ortasında hizalanması için */
+    top: 20px; 
+    left: 50%;
     transform: translateX(-50%); /* Ortalamak için */
     z-index: 1000; /* Üstte görünmesi için */
   }
