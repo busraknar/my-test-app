@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 
 declare var cv: any;
 
@@ -9,6 +9,8 @@ interface OMRReaderProps {
 const OMRReader: React.FC<OMRReaderProps> = ({ onResult }) => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const imageRef = useRef<HTMLImageElement>(null);
+    const [recognizedText, setRecognizedText] = useState<string>("");
+
 
     const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const file = e.target.files?.[0];
@@ -61,7 +63,7 @@ const OMRReader: React.FC<OMRReaderProps> = ({ onResult }) => {
                     cv.drawContours(src, contours, i, new cv.Scalar(255, 0, 0), 3); // Dörtgenleri kırmızı çiz
 
                     // Burada kontur ile ilgili bir metin elde edebilirsiniz. Örnek olarak:
-                    recognizedText += `Contour ${i} recognized.\n`;
+                    recognizedText += `Contour ${i} recognized at coordinates: ${approx.data32F}\n`;
                 }
                 approx.delete();
             }
@@ -70,7 +72,10 @@ const OMRReader: React.FC<OMRReaderProps> = ({ onResult }) => {
             cv.imshow(canvasElement, src);
 
             // Tanınan metni onResult ile ilet
-            onResult(recognizedText); 
+           // onResult(recognizedText); 
+
+             // Tanınan metni state'e kaydedelim
+             setRecognizedText(recognizedText); 
 
             // Bellek temizleme
             src.delete();
@@ -84,10 +89,17 @@ const OMRReader: React.FC<OMRReaderProps> = ({ onResult }) => {
     return (
         <div>
             <h1>OMR Reader</h1>
+            <div style={{ maxHeight: '200px', overflowY: 'auto', border: '1px solid #ccc', padding: '10px' }}>
             <input type="file" accept="image/*" onChange={handleFileChange} />
             <button onClick={processImage}>Görüntüyü İşle</button>
-            <canvas ref={canvasRef} width="640" height="480"></canvas>
             <img ref={imageRef} alt="OMR" style={{ display: 'none' }} />
+            <canvas ref={canvasRef} width="640" height="420"  style={{ display: 'block', marginBottom: '20px' }}></canvas>
+            <div>
+                <h2>Tanınan Konturlar:</h2>
+                <pre>{recognizedText}</pre> {/* Sonuçları gösterelim */}
+            </div> 
+            </div>
+           
         </div>
     );
 };
