@@ -2,6 +2,17 @@ import React, { useRef, useState } from 'react';
 
 declare var cv: any;
 
+const parseCoordinates = (approx: any) => {
+    const points: Array<{ x: number; y: number }> = [];
+    for (let i = 0; i < approx.rows; i++) {
+        points.push({
+            x: approx.data32F[i * 2],      // x koordinatı
+            y: approx.data32F[i * 2 + 1],  // y koordinatı
+        });
+    }
+    return points;
+};
+
 interface OMRReaderProps {
   onResult: (text: string) => void; // Sonuçları iletmek için prop
 }
@@ -62,8 +73,10 @@ const OMRReader: React.FC<OMRReaderProps> = ({ onResult }) => {
                 if (approx.rows === 4) {
                     cv.drawContours(src, contours, i, new cv.Scalar(255, 0, 0), 3); // Dörtgenleri kırmızı çiz
 
-                    // Burada kontur ile ilgili bir metin elde edebilirsiniz. Örnek olarak:
-                    recognizedText += `Contour ${i} recognized at coordinates: ${approx.data32F}\n`;
+                    
+                     // Koordinatları ayrıştır
+                     const points = parseCoordinates(approx);
+                    recognizedText += `Contour ${i} recognized at coordinates:${JSON.stringify(points)}\n`;
                 }
                 approx.delete();
             }
