@@ -1805,7 +1805,7 @@ section,
 .team .member .member-img .social a {
   transition: 0.3s;
   color: var(--contrast-color);
-  font-size: 20px;
+  font-size: 25px;
   margin: 0 8px;
 }
 
@@ -1820,7 +1820,7 @@ section,
 .team .member .member-info h4 {
   font-weight: 700;
   margin-bottom: 6px;
-  font-size: 18px;
+  font-size: 25px;
 }
 
 .team .member .member-info span {

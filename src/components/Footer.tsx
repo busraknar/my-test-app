@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
       <div className="container copyright text-center mt-4">
         <p>© <span>Copyright</span> <strong className="px-1 sitename">Moderna</strong> <span>All Rights Reserved</span></p>
         <div className="credits">
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          Designed by Büşra AKNAR
         </div>
       </div>
     </footer>
