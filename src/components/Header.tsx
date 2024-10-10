@@ -7,7 +7,7 @@ const Header: React.FC = () => {
         <header id="header" className="header d-flex align-items-center fixed-top">
             <div className="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-                <a href="index.html" className="logo d-flex align-items-center">
+                <a href="/" className="logo d-flex align-items-center">
                     {/* Eğer bir resim logosu kullanmak isterseniz, aşağıdaki satırı kullanabilirsiniz */}
                     {/* <img src="assets/img/logo.png" alt="logo" /> */}
                     <h1 className="sitename" style={{ color: 'white' }}>Söz Test</h1>

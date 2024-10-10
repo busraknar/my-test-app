@@ -32,15 +32,6 @@ const IndexPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Featured Services Section */}
-      <section id="featured-services" className="featured-services section">
-        <div className="container">
-          <div className="row gy-4">
-            {/* Service Items */}
-            {/* Servisler için diğer öğeler */}
-          </div>
-        </div>
-      </section>
 
     </main>
   );
