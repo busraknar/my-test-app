@@ -21,6 +21,20 @@ const IndexPage: React.FC = () => {
                 <a href="#about" className="btn-get-started">Daha fazla</a>
               </div>
             </div>
+            <div className="carousel-item">
+              <div className="carousel-container">
+                <h2>2. Sınıfların değerlendirmesi Ekim sonu açıklanacaktır.</h2>
+                <p>Sonuçlar için sabırlı olmanız tavsiye olunur.</p>
+                <a href="#about" className="btn-get-started">Daha fazla</a>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <div className="carousel-container">
+                <h2>3 ve 4. Sınıfların değerlendirmesi tamamlanmıştır.</h2>
+                <p>Mezuniyet durumu etkilenmeyecek şekilde yardımcı olunmuştur.</p>
+                <a href="#about" className="btn-get-started">Daha fazla</a>
+              </div>
+            </div>
 
             <a className="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
               <span className="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
