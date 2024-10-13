@@ -5,7 +5,7 @@
 .section {
     display: flex;
     justify-content: center; /* Yatayda ortalama */
-    align-items: center; /* Dikeyde ortalama */
+    align-items: center;
     min-height: 100vh; /* Ekranın tamamını kaplama */
     
   }
@@ -24,9 +24,9 @@
   
   .col-lg-4, .col-lg-6 {
     display: flex;
-    flex-direction: column; /* Dikey düzen */
-    align-items: center; /* Yatayda ortalama */
-    text-align: center; /* Metin ortalama */
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
   }
   
   .img-fluid {
@@ -40,6 +40,6 @@
   }
   
   .pulsating-play-btn {
-    /* İlgili stil kurallarınızı buraya ekleyebilirsiniz */
+    background-color: pink;
   }
   
