@@ -20,10 +20,10 @@ const Header: React.FC = () => {
                         <li><Link to="/test">Sınav Okuma</Link></li>
                         <li><Link to="/team">Hazırlayanlar</Link></li>
                         <li className="dropdown">
-                            <a href="#"><span>Sonuçlar</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <Link to="/result"><span>Sonuçlar</span> <i className="bi bi-chevron-down toggle-dropdown"></i></Link>
                             <ul>
                                 <li className="dropdown">
-                                    <a href="#"><span>Sınıflar</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <Link to="/result"><span>Sınıflar</span> <i className="bi bi-chevron-down toggle-dropdown"></i></Link>
                                     <ul>
                                         <li><Link to="/university1">Üniversite 1.Sınıf</Link></li>
                                         <li><Link to="/university2">Üniversite 2.Sınıf</Link></li>
