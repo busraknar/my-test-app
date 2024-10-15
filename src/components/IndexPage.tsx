@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const IndexPage: React.FC = () => {
   return (
@@ -18,7 +19,7 @@ const IndexPage: React.FC = () => {
               <div className="carousel-container">
                 <h2>1. Sınıfların değerlendirmesi tamamlandı.</h2>
                 <p>Sonuçlar için Sabri Öz hocaya ulaşabilirsiniz.</p>
-                <a href="#about" className="btn-get-started">Daha fazla</a>
+                <Link to="/university1" className="btn-get-started">Daha fazla</Link>
               </div>
             </div>
             <div className="carousel-item">
