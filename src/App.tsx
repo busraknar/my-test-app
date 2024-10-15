@@ -7,8 +7,9 @@ import AboutPage from './components/AboutPage';
 import IndexPage from './components/IndexPage';
 import ReadingTest from './components/ReadingTest';
 import Contact from './components/Contact';
-import UniversityResults from './components/UniversityResults';
-import ReadingOmr from './components/ReadingOmr';
+import UniversityResults from './pages/Results/UniversityResults';
+import ReadingOmr from './NotUsed/ReadingOmr';
+import ResultAll from './pages/ResultAll/ResultAll';
 
 
 const App: React.FC = () => {
@@ -21,8 +22,9 @@ const App: React.FC = () => {
         <Route path="/" element={<IndexPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/team" element={<Team />} />
-        <Route path="/test" element={<ReadingOmr />} />
+        <Route path="/test" element={<ReadingTest />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/result" element={<ResultAll/>} />
 
       </Routes>
       <Footer />
