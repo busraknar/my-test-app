@@ -1,0 +1,32 @@
+.results-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    font-size: 1.2rem;
+    color: #555;
+    padding: 10px 0;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #999;
+  }
+  
