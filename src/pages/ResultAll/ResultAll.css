@@ -1,6 +1,10 @@
 .all-results-container {
     text-align: center;
-    padding: 80px;
+    padding: 150px;
+  }
+
+  .all-results-container h2{
+    color: white;
   }
   
   .cards-container {
@@ -17,6 +21,8 @@
     width: 200px;
     height: 100px;
     text-align: center;
+    display: flex;
+    align-items: center;
     justify-content: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
