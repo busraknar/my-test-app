@@ -2,7 +2,7 @@ import React from 'react';
 
 const Team: React.FC = () => {
   return (
-    <section id="team" className="team">
+    <section id="team" className="team" style={{ marginTop: '100px' }}>
       <div className="container">
         <div className="row gy-5">
 

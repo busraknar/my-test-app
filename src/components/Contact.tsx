@@ -47,7 +47,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="contact section" style={{ marginTop: '50px' }}>
+    <section id="contact" className="contact section" style={{ marginTop: '100px' }}>
       <div className="container" data-aos="fade-up" data-aos-delay="100">
         <div className="row gy-4">
           <div className="col-lg-6">
